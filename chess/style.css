@@ -1,0 +1,37 @@
+body{
+    background:white;
+    text-align:center;
+    font-family:Arial, sans-serif;
+}
+
+
+h1{
+    margin:20px;
+}
+
+
+.board{
+    width:400px;
+    margin:20px auto;
+}
+
+
+.row{
+    display:flex;
+}
+
+
+.row div{
+    width:50px;
+    height:50px;
+}
+
+
+.black{
+    background:#b58863;
+}
+
+
+.white{
+    background:#f0d9b5;
+}
