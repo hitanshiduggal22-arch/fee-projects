@@ -1,0 +1,440 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI',sans-serif;
+}
+
+body{
+
+    background:#eef4ff;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    min-height:100vh;
+
+    padding:20px;
+
+}
+
+.container{
+
+    width:700px;
+    max-width:100%;
+
+    background:white;
+
+    border-radius:20px;
+
+    padding:30px;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.12);
+
+}
+
+h1{
+
+    text-align:center;
+
+    color:#444;
+
+    margin-bottom:30px;
+
+    font-size:35px;
+
+}
+
+.top{
+
+    display:flex;
+
+    gap:10px;
+
+    margin-bottom:20px;
+
+}
+
+.top input{
+
+    flex:1;
+
+}
+
+input,
+select{
+
+    padding:12px;
+
+    border:1px solid #d6d6d6;
+
+    border-radius:10px;
+
+    font-size:16px;
+
+    outline:none;
+
+}
+
+input:focus,
+select:focus{
+
+    border-color:#90caf9;
+
+}
+
+#search{
+
+    width:100%;
+
+    margin-bottom:20px;
+
+}
+
+button{
+
+    padding:12px 18px;
+
+    border:none;
+
+    border-radius:10px;
+
+    cursor:pointer;
+
+    font-size:15px;
+
+    transition:.3s;
+
+}
+
+
+.top button{
+
+    background:#bbdefb;
+
+    color:#1e3a5f;
+
+}
+
+.top button:hover{
+
+    background:#90caf9;
+
+}
+
+
+.count{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    background:#f5f7fb;
+
+    padding:15px;
+
+    border-radius:10px;
+
+    margin-bottom:20px;
+
+    font-weight:bold;
+
+    color:#444;
+
+}
+
+.count span{
+
+    color:#2196f3;
+
+    font-size:18px;
+
+}
+
+
+#taskList{
+
+    list-style:none;
+
+}
+
+#taskList li{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:15px;
+
+    margin-bottom:12px;
+
+    background:#fafafa;
+
+    border-left:6px solid #90caf9;
+
+    border-radius:10px;
+
+    box-shadow:0 3px 8px rgba(0,0,0,.08);
+
+}
+
+#taskList span{
+
+    flex:1;
+
+    line-height:1.6;
+
+}
+
+#taskList small{
+
+    color:#666;
+
+}
+
+
+#taskList button{
+
+    margin-left:8px;
+
+    padding:8px 14px;
+
+}
+
+#taskList button:nth-child(2){
+
+    background:#c8e6c9;
+
+}
+
+#taskList button:nth-child(2):hover{
+
+    background:#a5d6a7;
+
+}
+
+#taskList button:nth-child(3){
+
+    background:#ffe0b2;
+
+}
+
+#taskList button:nth-child(3):hover{
+
+    background:#ffcc80;
+
+}
+
+#taskList button:nth-child(4){
+
+    background:#ffcdd2;
+
+}
+
+#taskList button:nth-child(4):hover{
+
+    background:#ef9a9a;
+
+}
+
+
+.high{
+
+    color:#e53935;
+
+    font-weight:bold;
+
+}
+
+.medium{
+
+    color:#fb8c00;
+
+    font-weight:bold;
+
+}
+
+.low{
+
+    color:#43a047;
+
+    font-weight:bold;
+
+}
+
+
+.completed{
+
+    text-decoration:line-through;
+
+    color:gray;
+
+}
+
+
+.bottomButtons{
+
+    margin-top:25px;
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:15px;
+
+    flex-wrap:wrap;
+
+}
+
+.bottomButtons button:nth-child(1){
+
+    background:#fff3cd;
+
+}
+
+.bottomButtons button:nth-child(1):hover{
+
+    background:#ffe69c;
+
+}
+
+.bottomButtons button:nth-child(2){
+
+    background:#ffd6d6;
+
+}
+
+.bottomButtons button:nth-child(2):hover{
+
+    background:#ffb3b3;
+
+}
+
+.bottomButtons button:nth-child(3){
+
+    background:#d6ecff;
+
+}
+
+.bottomButtons button:nth-child(3):hover{
+
+    background:#b8dcff;
+
+}
+
+/* Dark Mode */
+
+.dark{
+
+    background:#202124;
+
+}
+
+.dark .container{
+
+    background:#2f3136;
+
+    color:white;
+
+}
+
+.dark h1{
+
+    color:white;
+
+}
+
+.dark input,
+.dark select{
+
+    background:#444;
+
+    color:white;
+
+    border:none;
+
+}
+
+.dark .count{
+
+    background:#444;
+
+    color:white;
+
+}
+
+.dark .count span{
+
+    color:#90caf9;
+
+}
+
+.dark #taskList li{
+
+    background:#3b3b3b;
+
+}
+
+.dark #taskList small{
+
+    color:#ddd;
+
+}
+
+
+@media(max-width:700px){
+
+.top{
+
+    flex-direction:column;
+
+}
+
+.top button{
+
+    width:100%;
+
+}
+
+.count{
+
+    flex-direction:column;
+
+    gap:10px;
+
+}
+
+#taskList li{
+
+    flex-direction:column;
+
+    align-items:flex-start;
+
+}
+
+#taskList button{
+
+    margin-top:8px;
+
+    width:100%;
+
+}
+
+.bottomButtons{
+
+    flex-direction:column;
+
+}
+
+.bottomButtons button{
+
+    width:100%;
+
+}
+
+}
